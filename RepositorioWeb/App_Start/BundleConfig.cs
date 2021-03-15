@@ -8,6 +8,11 @@ namespace RepositorioWeb {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/platillaJs").Include(
+                        "~/Scripts/plantilla/jquery-ui.custom.min.js",
+                        "~/Scripts/plantilla/ace-elements.min.js",
+                        "~/Scripts/plantilla/ace.min.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
 
@@ -21,7 +26,10 @@ namespace RepositorioWeb {
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Scripts/font-awesome.min.css",
+                      "~/Content/ace.min.css",
+                      "~/Content/ace-skins.min.css",
+                      "~/Content/ace-rtl.min.css"));
         }
     }
 }
